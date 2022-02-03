@@ -70,12 +70,13 @@ p {
 
 .productgrid {
     display: grid;
-    grid-template-columns: 500px 500px;
+    /* grid-template-columns: 500px 500px; */
+    grid-template-columns: 100%;
     grid-template-rows: repeat(5, 600px);
     column-gap: 30px;
     row-gap: 30px;
     margin-top: 44px;
-    grid-auto-rows: 500px;
+    /* grid-auto-rows: 500px; */
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -85,7 +86,12 @@ p {
     background-color: #F0F4EF;
     padding: 10px 10px 10px 10px;
     overflow: scroll;
+    color: #154734;
+}
 
+.productgrid div:nth-child(2n) {
+    background-color: #C2C9C6;
+    overflow: scroll;
 }
 
 .productgrid img {
@@ -210,3 +216,5 @@ footer p {
     color: #154734;
     text-decoration: none;
   }
+
+
